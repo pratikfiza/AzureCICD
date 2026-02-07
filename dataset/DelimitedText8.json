@@ -1,0 +1,73 @@
+{
+	"name": "DelimitedText8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customers-100.json",
+				"fileSystem": "targetcont16126"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "{\"Index\":\"1\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Customer Id\":\"DD37Cf93aecA6Dc\"",
+				"type": "String"
+			},
+			{
+				"name": "\"First Name\":\"Sheryl\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Last Name\":\"Baxter\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Company\":\"Rasmussen Group\"",
+				"type": "String"
+			},
+			{
+				"name": "\"City\":\"East Leonard\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Country\":\"Chile\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Phone 1\":\"229.077.5154\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Phone 2\":\"397.884.0519x718\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Email\":\"zunigavanessa@smith.info\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Subscription Date\":\"2020-08-24\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Website\":\"http://www.stephenson.com/\"}",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
