@@ -1,0 +1,49 @@
+{
+	"name": "Json9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage5",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "targetcont16126"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Index": {
+					"type": "string"
+				},
+				"User Id": {
+					"type": "string"
+				},
+				"First Name": {
+					"type": "string"
+				},
+				"Last Name": {
+					"type": "string"
+				},
+				"Sex": {
+					"type": "string"
+				},
+				"Email": {
+					"type": "string"
+				},
+				"Phone": {
+					"type": "string"
+				},
+				"Date of birth": {
+					"type": "string"
+				},
+				"Job Title": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
